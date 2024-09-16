@@ -17,5 +17,16 @@
   - It prints a message saying "Hello from Docker!".
   - It shows that Docker is installed correctly and is able to run containers.
 
-  ### Exercise 2: Basic Docker Commands
-  
+### Exercise 2: Basic Docker Commands
+![alt text](211.png)
+![alt text](212.png)
+- **Difference between `docker pull` and `docker run`:**
+  - **`docker pull`**: Downloads a Docker image from a registry (like Docker Hub) to your local machine.
+  - **`docker run`**: Creates and starts a container from a Docker image (automatically pulls the image if it’s not already downloaded).
+
+- **Finding details of a running container (ID and status):**
+  - Use the command **`docker ps`**. It shows container ID, status, names, and more details about running containers.
+
+- **What happens after a container is stopped? Can it be restarted?**
+  - The container remains on the system in a **stopped state**.
+  - Yes, it can be restarted using **`docker start <container_id>`** without needing to create a new one.
