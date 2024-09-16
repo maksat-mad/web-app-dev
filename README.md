@@ -30,3 +30,16 @@
 - **What happens after a container is stopped? Can it be restarted?**
   - The container remains on the system in a **stopped state**.
   - Yes, it can be restarted using **`docker start <container_id>`** without needing to create a new one.
+
+### Exercise 3: Working with Docker Containers
+![alt text](213.png)
+![alt text](214.png)
+- **Port mapping in Docker:**
+  - Port mapping connects a **port on the host machine** to a **port inside the container** (e.g., `-p 8080:80` maps host port 8080 to container port 80).
+  - It's important because it allows external access to services running inside the container.
+
+- **Purpose of `docker exec`:**
+  - It lets you **run commands** inside an already running container (e.g., open a shell or run scripts).
+
+- **Ensuring a stopped container does not consume system resources:**
+  - Remove the stopped container using **`docker rm <container_id>`**. This frees up disk space and prevents it from consuming resources.
